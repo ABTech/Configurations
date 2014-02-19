@@ -1,0 +1,8 @@
+#!/bin/bash
+/bin/cp abtechtt_prod.sql.5 abtechtt_prod.sql.6
+/bin/cp abtechtt_prod.sql.4 abtechtt_prod.sql.5
+/bin/cp abtechtt_prod.sql.3 abtechtt_prod.sql.4
+/bin/cp abtechtt_prod.sql.2 abtechtt_prod.sql.3
+/bin/cp abtechtt_prod.sql.1 abtechtt_prod.sql.2
+/bin/cp abtechtt_prod.sql abtechtt_prod.sql.1
+/usr/bin/mysqldump abtechtt_prod > abtechtt_prod.sql
