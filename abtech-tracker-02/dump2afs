@@ -1,0 +1,5 @@
+#!/bin/bash
+/usr/bin/mysqldump abtechtt_prod > abtechtt_prod_tmp.sql
+/bin/gzip --best abtechtt_prod_tmp.sql
+/bin/cp abtechtt_prod_tmp.sql.gz /afs/andrew.cmu.edu/usr/abtech/sysadmins/abtt_sql_backups/`date +%Y%m%d%H%M%S`.abtt-backup.sql.gz
+/bin/rm abtechtt_prod_tmp.sql.gz

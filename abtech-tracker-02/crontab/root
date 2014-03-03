@@ -1,2 +1,3 @@
 # m h  dom mon dow   command
 30 04 * * * /root/mysqldumper
+55 14 * * 6 /root/dump2afs
